@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Gotham Pro'; 
+    src: local('Gotham Pro'),
+    url(../fonts/gothampro.ttf); 
+}
+ 
+/* Жирный */
+@font-face {
+	font-family: 'Gotham Pro Bold'; 
+	src: local('Gotham Pro'),
+    url(../fonts/gothampro_bold.ttf);
+}
+ 

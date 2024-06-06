@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gothampro.ttf') format('ttf'),
+    url('../fonts/gothampro.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gothampro_bold.ttf') format('ttf'),
+    url('../fonts/gothampro_bold.ttf') format('ttf');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Gotham Pro', sans-serif !important;
+    background-color: #212121 !important;
+    overflow-x: hidden !important;
+}
+
+header {
+    background-color: #323233 !important;
+    height: 70px !important;
+}
+
+.logo {
+    width: 60px;
+    height: 30px;
+    background-image: url('../icons/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-collapse.show {
+    padding: 3% !important;
+    width: 300px !important;
+    background-color: #323233 !important;
+    height: 100% !important;
+    color:#FFFFFF !important;
+}
+
+.nav-link {
+    width: 40% !important;
+    color:#FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+.phone-numbers {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+
+.phone-numbers a {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+    font-size: 9px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar-toggler-icon {
+    color:#FFFFFF !important;
+    background-image: none !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(0,0,0,.1) !important;
+}
+  
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+  
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M7 7l16 16M23 7L7 23'/%3E%3C/svg%3E") !important;
+}
+.fon {
+    margin-top: 70px !important;
+    position: relative; /* Добавлено для создания контекста наложения */
+    background-image: url('../img/fon1.webp') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    background-color: #32323371 !important;
+    z-index: 1; /* Фон на нижнем уровне */
+}
+
+.fon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Затемнение над фоном */
+}
+
+.zag {
+    position: relative;
+    padding-top: 270px !important;
+    font-size: 30px !important;
+    z-index: 3 !important; /* Текст на верхнем уровне */
+}
+
+.mini_zag {
+    position: relative;
+    font-size: 18px !important;
+    z-index: 3 !important; /* Текст на верхнем уровне */
+}
+
+.hidden-text {
+    display: none;
+}
+
+.minus {
+    padding: 3% !important;
+    color:#FFFFFF !important;
+    font-size: 18px !important;
+}
+
+.text_Helper {
+    color:#888988 !important;
+    font-size: 12px !important;
+    padding-bottom: 2% !important;
+}
+
+.modal-content {
+    background-color: #323233 !important;
+}
+.inpi {
+    border: 0 !important;
+    margin-bottom: 2% !important;
+    border-bottom: 3px solid #999999 !important;
+    background-color: #323233 !important;
+    color:#FFFFFF !important;
+}
+
+.close {
+    position: absolute !important;
+    top: auto !important;
+    left: 80% !important;
+}
+
+.vubor {
+    padding: 2% !important;
+    border: 0 !important;
+    margin-bottom: 2% !important;
+    border-bottom: 3px solid #999999 !important;
+    background-color: #323233 !important;
+    color:#FFFFFF !important;
+}
+.knopa {
+    position: relative;
+    background-color: #DD3037 !important;
+    color: #FFFFFF !important;
+    width: 230px !important;
+    height: 40px !important;
+    margin-top: 35px !important;
+    margin-bottom: 45px !important;
+    border: 0px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    z-index: 3 !important; /* Текст на верхнем уровне */
+}
+
+
+.zag_around {
+    color: #999999 !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    padding-top: 45px !important;
+}
+
+.prikol {
+    color: #21A038 !important;
+    width: 80px !important;
+    height: 70px !important;
+    border: 1px solid #B6FFBA !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    background-color: #000000 !important;
+    margin: 0 auto !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 70px !important;
+    box-shadow: 0px 0px 7px 2px #B6FFBA;
+    margin-top: 45px !important;
+}
+
+.nesmeshno {
+    color:#FFFFFF !important;
+    font-size: 16px !important;
+    padding-top: 15px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+
+.strange {
+    height: 36px !important;
+    color:#FFFFFF !important;
+    border: 3px solid #999999 !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    font-size: 14px !important; 
+    font-weight: 700 !important;
+    background-color:#212121 !important;
+    margin: 1% !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+
+.strange:hover {
+    color: #212121 !important;
+    background-color:#999999 !important;
+    transition: .3s;
+}
+
+/* Карточки */
+
+.cardo {
+    display: flex !important;
+    border: 3px solid #999999 !important;
+    border-radius: 30px !important;
+    padding: 30px !important;
+    width: 96% !important;
+    margin: 0 auto !important;
+    margin-bottom: 3% !important;
+}
+.icon-column {
+    display: flex !important;
+    flex-direction: column !important;
+
+}
+.icon-row {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+}
+.icon {
+    width: 30px; /* Замените на размер вашей иконки */
+    height: 30px; /* Замените на размер вашей иконки */
+    margin-right: 10px;
+}
+.text1 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+}
+.text2 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #21A038 !important;
+}
+.main-icon {
+    flex-grow: 1 !important;
+    display: flex !important;
+    justify-content: right !important;
+    align-items: center !important;
+}
+
+
+.knopa_another {
+    position: relative;
+    background-color: #DD3037 !important;
+    color: #FFFFFF !important;
+    height: 40px !important;
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+    border: 0px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    width: 60%;
+    margin-left: 20% !important;
+}
+
+.darky {
+    background-color: #111311 !important;
+}
+
+.lishichka {
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    color:#FFFFFF !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    padding: 1.5rem !important;
+}
+
+.poloska {
+    border-bottom: 3px solid #999999 !important;
+    width: 100% !important;
+}
+
+.plus {
+    position: absolute !important;
+    right: 20px !important;
+}
+
+
+
+/* Слайдер */
+
+.slider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.card2 {
+    width: 165px !important;
+    height: 190px !important;
+    margin: 0 10px !important;
+    transition: transform 0.5s, box-shadow 0.5s !important;
+    position: relative;
+    background-color: #D9D9D9; /* Цвет фона карточки */
+    border-radius: 10px !important;
+    border: 6px solid #00000040 !important;
+}
+.card2.active {
+    transform: scale(1) !important;
+    z-index: 2 !important;
+    box-shadow: -20px 0 50px -10px rgba(0, 0, 0, 0.8), 
+    20px 0 50px -10px rgba(0, 0, 0, 0.8) !important; /* Тени слева и справа */
+}
+.card2:not(.active) {
+    transform: scale(0.8) !important;
+    z-index: 1;
+}
+.arrow {
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    z-index: 2 !important;
+}
+.arrow.left { left: 20px; }
+.arrow.right { right: 20px; }
+.dots {
+    text-align: center !important;
+    padding-top: 10px !important;
+}
+.dot {
+    display: inline-block !important;
+    cursor: pointer !important;
+    height: 15px !important; /* Начальный размер кнопок */
+    width: 15px !important; /* Начальный размер кнопок */
+    margin: 0 5px !important;
+    background-color: #888988 !important;
+    border-radius: 50% !important;
+    transition: background-color 0.3s !important;
+}
+.dot.active {
+    background-color: #FFFFFF !important;
+    width: 40px !important;
+    border-radius: 15px !important;
+    transition: .3s;
+}
+
+.company_text {
+    color: #FFFFFF !important;
+    font-weight: 700;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    cursor: pointer !important;
+    user-select: none !important;
+}
+.arrow2.left { left: 20px; }
+.arrow2.right { right: 20px; }
+
+
+.people {
+    background-image: url("../img/people.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: auto;
+}
+
+.textik {
+    font-size: 18px !important;
+    line-height: 24px !important;
+}
+
+.cta {
+    margin-top: 140px !important;
+    background-color:#000000CC !important;
+    border: 3px solid #36853B !important;
+    border-radius: 20px !important;
+    padding: 5% !important; 
+    box-shadow: 0px 0px 7px 2px #B6FFBA !important;
+    margin-bottom: 35px !important;
+}
+
+.knopa_end {
+    position: relative;
+    background-color: #DD3037 !important;
+    color: #FFFFFF !important;
+    width: 70% !important;
+    height: 40px !important;
+    margin-top: 35px !important;
+    border: 0px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    margin-left: 14% !important; 
+}
+
+.spis {
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+
+.contacts {
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    padding: 1.5rem !important;
+    padding-left: 0 !important;
+}
+
+.lif {
+    color:#FFFFFF !important;
+    text-decoration: none !important;
+}
